@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cars Responsive Website || HTML CSS JavaScript</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="/css/style.css">
+
   </head>
   <body>
     <header class="header">
@@ -30,8 +32,8 @@
       <span class="fas fa-times" id="close-login-form"></span>
       <form action="">
         <h3>user login</h3>
-        <input type="email" placeholder="email" class="box">
-        <input type="password" placeholder="password" class="box">
+        <input type="email" placeholder="email" class="swiper-slide box">
+        <input type="password" placeholder="password" class="swiper-slide box">
         <p>forget your password <a href="#">click here</a></p>
         <input type="submit" value="login now" class="btn">
         <p>or login with</p>
@@ -48,7 +50,139 @@
       <img class="home-parallax" data-speed="5" src="/images/home-img.png" alt="">
       <a href="#" class="btn home-parallax" data-speed="7">explore cars</a>
     </section>
-    
+
+    <section class="icons-container">
+      <div class="icons">
+        <i class="fas fa-home"></i>
+        <div class="content">
+          <h3>150+</h3>
+          <p>branches</p>
+        </div>
+      </div>
+      <div class="icons">
+        <i class="fas fa-car"></i>
+        <div class="content">
+          <h3>4890+</h3>
+          <p>cars sold</p>
+        </div>
+      </div>
+      <div class="icons">
+        <i class="fas fa-users"></i>
+        <div class="content">
+          <h3>890+</h3>
+          <p>happy clients</p>
+        </div>
+      </div>
+      <div class="icons">
+        <i class="fas fa-car"></i>
+        <div class="content">
+          <h3>940+</h3>
+          <p>new cars</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="vehicles" id="vehicles">
+      <h1 class="heading"> popular <span>vehicles</span></h1>
+      <div class="swiper vehicles-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <img src="/images/vehicle-1.png" alt="">
+            <div class="content">
+              <h3>new model</h3>
+              <div class="price"> <span>price: </span> £55000/-</div>
+              <p>
+                new 
+                <span class="fas fa-circle"></span> 2022
+                <span class="fas fa-circle"></span> automatic 
+                <span class="fas fa-circle"></span> petrol 
+                <span class="fas fa-circle"></span> 183mph
+              </p>
+              <a href="#" class="btn">check out</a>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <img src="/images/vehicle-2.png" alt="">
+            <div class="content">
+              <h3>new model</h3>
+              <div class="price"> <span>price: </span> £55000/-</div>
+              <p>
+                new 
+                <span class="fas fa-circle"></span> 2022
+                <span class="fas fa-circle"></span> automatic 
+                <span class="fas fa-circle"></span> petrol 
+                <span class="fas fa-circle"></span> 183mph
+              </p>
+              <a href="#" class="btn">check out</a>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <img src="/images/vehicle-3.png" alt="">
+            <div class="content">
+              <h3>new model</h3>
+              <div class="price"> <span>price: </span> £65000/-</div>
+              <p>
+                new 
+                <span class="fas fa-circle"></span> 2022
+                <span class="fas fa-circle"></span> automatic 
+                <span class="fas fa-circle"></span> petrol 
+                <span class="fas fa-circle"></span> 183mph
+              </p>
+              <a href="#" class="btn">check out</a>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <img src="/images/vehicle-4.png" alt="">
+            <div class="content">
+              <h3>new model</h3>
+              <div class="price"> <span>price: </span> £75000/-</div>
+              <p>
+                new 
+                <span class="fas fa-circle"></span> 2022
+                <span class="fas fa-circle"></span> automatic 
+                <span class="fas fa-circle"></span> petrol 
+                <span class="fas fa-circle"></span> 183mph
+              </p>
+              <a href="#" class="btn">check out</a>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <img src="/images/vehicle-5.png" alt="">
+            <div class="content">
+              <h3>new model</h3>
+              <div class="price"> <span>price: </span> £85000/-</div>
+              <p>
+                new 
+                <span class="fas fa-circle"></span> 2022
+                <span class="fas fa-circle"></span> automatic 
+                <span class="fas fa-circle"></span> petrol 
+                <span class="fas fa-circle"></span> 183mph
+              </p>
+              <a href="#" class="btn">check out</a>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <img src="/images/vehicle-6.png" alt="">
+            <div class="content">
+              <h3>new model</h3>
+              <div class="price"> <span>price: </span> £95000/-</div>
+              <p>
+                new 
+                <span class="fas fa-circle"></span> 2022
+                <span class="fas fa-circle"></span> automatic 
+                <span class="fas fa-circle"></span> petrol 
+                <span class="fas fa-circle"></span> 183mph
+              </p>
+              <a href="#" class="btn">check out</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="/js/script.js"></script>
   </body>
 </html>
