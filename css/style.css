@@ -392,6 +392,40 @@ section {
   padding: 0 0.5rem;
 }
 
+.swiper-pagination-bullet-active {
+  background: var(--yellow);
+}
+
+.services 
+.box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap:1.5rem;
+}
+
+.services
+.box-container
+.box {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  border: var(--border);
+}
+
+.services
+.box-container
+.box i {
+  height: 6rem;
+  width: 6rem;
+  line-height: 6rem;
+  font-size: 2.5rem;
+  color: var(--black);
+  background: var(--yellow);
+  border-radius: 50%;
+  margin-top: 1rem;
+}
+
 
 @media (max-width: 991px) {
   html {
@@ -458,4 +492,7 @@ section {
     font-size: 50%;
   }
 
+  .heading {
+    font-size: 3rem;
+  }
 }
