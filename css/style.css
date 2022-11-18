@@ -28,6 +28,10 @@ html {
   scroll-behavior: smooth;
 }
 
+section {
+  padding: 2rem 9%;
+}
+
 .btn {
   display: inline-block;
   margin-top: 1rem;
@@ -108,15 +112,21 @@ html {
 
 .login-form-container {
   position: fixed;
-  top: 0;
+  top: 105%;
   left: 0;
-  z-index: 10000;
+  z-index: 1000;
   height: 100%;
   width: 100%;
   background: rgba(255, 255, 255, 0.8);
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0;
+}
+
+.login-form-container.active {
+  top: 0;
+  opacity: 1;
 }
 
 .login-form-container form {
@@ -174,7 +184,31 @@ html {
   text-decoration: underline;
 }
 
+.login-form-container #close-login-form {
+  position: fixed;
+  top: 1.5rem;
+  right: 2.5rem;
+  font-size: 5rem;
+  color: var(--black);
+  cursor: pointer;
+}
 
+.home {
+  padding-top: 10rem;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.home h1 {
+  font-size: 7.5vw;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.home img {
+  width: 100%;
+  margin: 1rem 0;
+}
 
 
 
@@ -188,6 +222,10 @@ html {
   }
 
   .header.active {
+    padding: 2rem;
+  }
+
+  section {
     padding: 2rem;
   }
 }
