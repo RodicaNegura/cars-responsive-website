@@ -15,9 +15,9 @@ document.querySelector('#close-login-form').onclick = () => {
 }
 
 window.onscroll = () => {
-  if(window.scrollY > 0) {
+  if (window.scrollY > 0) {
     document.querySelector('.header').classList.add('active')
-  }else{
+  } else {
     document.querySelector('.header').classList.add('active')
   }
 
@@ -26,15 +26,15 @@ window.onscroll = () => {
 }
 
 window.onload = () => {
-  if(window.scrollY > 0) {
+  if (window.scrollY > 0) {
     document.querySelector('.header').classList.add('active')
-  }else{
+  } else {
     document.querySelector('.header').classList.add('active')
   }
 }
 
 document.querySelector('.home').onmousemove = (e) => {
-  document.querySelectorAll('.home-parallax').forEach(elm =>{
+  document.querySelectorAll('.home-parallax').forEach(elm => {
     let speed = elm.getAttribute('data-speed')
     let x = (window.innerWidth - e.pageX * speed) / 90
     let y = (window.innerHeight - e.pageY * speed) / 90
@@ -44,12 +44,12 @@ document.querySelector('.home').onmousemove = (e) => {
 }
 
 document.querySelector('.home').onmouseleave = () => {
-  document.querySelectorAll('.home-parallax').forEach(elm =>{
+  document.querySelectorAll('.home-parallax').forEach(elm => {
     elm.style.transform = `translateX(0px) translateY(0px)`
   })
 }
 
-var swiper = new Swiper(".vehicles-slider", {
+const swiper = new Swiper(".vehicles-slider", {
   slidesPerView: 1,
   spaceBetween: 20,
   loop:true,
