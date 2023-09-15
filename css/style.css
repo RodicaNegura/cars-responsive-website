@@ -80,7 +80,6 @@ section {
   right: 0;
   z-index: 1000;
   background: #fff;
-  display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 3rem 9%;
